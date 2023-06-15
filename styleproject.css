@@ -1,0 +1,380 @@
+html {
+    background-image: url("https://linkisteel.ru/wp-content/uploads/b/3/9/b395af26c5ba0b850beea9fabb9e9825.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+.navbar {
+    background-color: rgba(153, 194, 223, 0.47);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*style for logo*/
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+
+.style-lets {
+    color: #189AB4;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 70px;
+}
+
+.style-travel {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/*style for dropmenu*/
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.info>div {
+    display: flex;
+}
+
+.drop:hover .dropdown-content-history {
+    display: block;
+}
+
+
+.drop:hover .dropdown-content-time {
+    display: block;
+}
+
+.drop {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.dropdown {
+    text-decoration: none;
+    position: relative;
+}
+
+.dropdown-content-history {
+    display: none;
+    position: absolute;
+    background-color: rgba(153, 194, 223, 0.783);
+    min-width: 180px;
+    box-shadow: 0px 10px 18px 1px rgba(0, 0, 0, 0.227);
+    z-index: 1;
+    right: 0;
+    margin-top: 20px;
+}
+
+.dropdown-content-time {
+    display: none;
+    position: absolute;
+    background-color: rgba(153, 194, 223, 0.783);
+    min-width: 130px;
+    box-shadow: 0px 10px 18px 1px rgba(0, 0, 0, 0.227);
+    z-index: 1;
+    right: 0;
+    margin-top: 20px;
+}
+
+.drop-menu {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    line-height: 1.2;
+}
+
+.list a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+}
+
+/*style for body*/
+/*main-content*/
+.main-content {
+    width: 700px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+
+.main-content h2 {
+    color: rgb(232, 232, 232);
+    font-family: Arial, sans-serif;
+    padding-left: 30px;
+}
+
+.main-content h4 a {
+    color: rgb(232, 232, 232);
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.main-content p {
+    font-family: 'Oswald', sans-serif;
+    color: #05445E;
+    font-size: 20px;
+    text-indent: 25px;
+}
+
+.main-content h1 {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+}
+
+.wrapper {
+    padding-left: 30px;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: rgba(250, 250, 250, 0.677);
+    border: 4px #27c9eac8;
+    padding: 4px 16px;
+    transition: btn-color 0.5s;
+    font-size: medium;
+    color: #157e93;
+    cursor: pointer;
+}
+
+.btn-color:hover {
+    background-color: #27c9eac8;
+}
+
+/*offers*/
+.main-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: 400px 400px auto;
+    background-color: rgba(153, 194, 223, 0.916);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 200px;
+    border-radius: 0 50px 0 0;
+}
+
+.off-summ-grid {
+    display: grid;
+    grid-template-areas:
+        "N N  H H H H"
+        "N N  T T T T"
+        "N N  T T T T"
+        "N N  T T T T";
+    width: 400px;
+    height: 200px;
+    margin-left: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+
+}
+
+.off-summ-grid h1 {
+    grid-area: N;
+    color: #157e93;
+}
+
+.off-summ-grid h3 {
+    grid-area: H;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.off-summ-grid p {
+    grid-area: T;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.off-wint-grid {
+    display: grid;
+    grid-template-areas:
+        "A A  B B B B"
+        "A A  C C C C"
+        "A A  C C C C"
+        "A A  C C C C"
+        "A A  C C C C"
+        "A A  C C C C";
+    width: 400px;
+    height: 200px;
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+
+.off-wint-grid h1 {
+    grid-area: A;
+    color: #157e93;
+}
+
+.off-wint-grid h3 {
+    grid-area: B;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.off-wint-grid p {
+    grid-area: C;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.next {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.fa-share {
+    grid-area: 2 / 2;
+    color: white;
+    font-size: 2em;
+    transition: color 0.5s;
+}
+
+.fa-share:hover {
+    cursor: pointer;
+    color: #27c9eac8;
+}
+
+/*social-media*/
+.social-media {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(5, 40px);
+}
+
+/*
+.social-media i {
+    color: white;
+    font-size: 1.5em;
+}*/
+
+.fa-camera-retro {
+    color: white;
+    font-size: 1.5em;
+    grid-area: 4 / 5;
+}
+
+.fa-plane {
+    color: white;
+    font-size: 1.5em;
+    grid-area: 4 / 6;
+}
+
+.fa-heart {
+    color: white;
+    font-size: 1.5em;
+    grid-area: 4 / 7;
+}
+
+@keyframes background-animation {
+    from {
+        color: white;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+/*
+@keyframes size-animation {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+    50% {
+        width: 500px;
+        height: 500px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}*/
+
+.background-animation {
+    color: red;
+    animation-name: background-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+/*
+.size-animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    animation-name: size-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}*/
+
+/*style for footer*/
+.footer-contact {
+    margin-top: 10px;
+}
+
+.footer-contact h6 {
+    margin: 0;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.contact {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li,
+i {
+    margin-right: 10px;
+}
+
+.social i {
+    padding: 5px;
+}
