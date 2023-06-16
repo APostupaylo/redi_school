@@ -2,18 +2,64 @@ html {
     background-image: url("https://linkisteel.ru/wp-content/uploads/b/3/9/b395af26c5ba0b850beea9fabb9e9825.jpeg");
     background-attachment: fixed;
     background-size: cover;
-    transition: background-image 0.20s ease;
+    /* transition: background-image 0.20s ease;*/
 }
 
+/*
 html:hover {
-    background-image: url("https://baikalnova.ru/wp-content/uploads/2019/12/baikalice2.jpg");
+    background-image: url("https://sportishka.com/uploads/posts/2022-03/1646716708_2-sportishka-com-p-priroda-baikala-zimoi-turizm-krasivo-foto-2.jpg");
 
-}
+}*/
 
 
 .navbar {
     background-color: rgba(153, 194, 223, 0.47);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*style for screen navbar*/
+@media screen and (max-width: 390px) {
+    .navbar {
+        height: 250px;
+        width: 1200px;
+    }
+
+
+    .navbar .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo .style-lets {
+        font-size: 4em;
+    }
+
+    .style-travel {
+        font-size: 2em;
+    }
+
+    .drop,
+    .list {
+        font-size: 2em;
+    }
+
+    .drop .dropdown-content-time {
+        min-width: 180px;
+        margin-top: 50px;
+        font-size: 0.8em;
+    }
+
+    .drop .dropdown-content-history {
+        min-width: 250px;
+        margin-top: 50px;
+        font-size: 0.8em;
+
+    }
+
+    .dropdown li {
+        list-style-type: none;
+    }
 }
 
 /*style for logo*/
@@ -174,6 +220,15 @@ html:hover {
 .btn-color:hover {
     background-color: #27c9eac8;
 }
+
+/*
+@media screen and (max-width: 390px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}*/
+
 
 /*offers*/
 .main-flexbox {
