@@ -31,12 +31,19 @@ html:hover {
         align-items: center;
     }
 
+    .info-container .logo,
+    .info {
+        margin: 0;
+    }
+
     .logo .style-lets {
         font-size: 4em;
+
     }
 
     .style-travel {
         font-size: 2em;
+
     }
 
     .drop,
@@ -168,6 +175,15 @@ html:hover {
 }
 
 /*style for body*/
+/*style for screen body*/
+@media screen and (max-width: 390px) {
+    .main-content {
+        width: 1000px;
+        height: 800px;
+        margin: 0 auto;
+    }
+}
+
 /*main-content*/
 .main-content {
     width: 700px;
@@ -220,15 +236,6 @@ html:hover {
 .btn-color:hover {
     background-color: #27c9eac8;
 }
-
-/*
-@media screen and (max-width: 390px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-}*/
-
 
 /*offers*/
 .main-flexbox {
