@@ -2,9 +2,14 @@ html {
     background-image: url("https://linkisteel.ru/wp-content/uploads/b/3/9/b395af26c5ba0b850beea9fabb9e9825.jpeg");
     background-attachment: fixed;
     background-size: cover;
+    transition: background-image 0.20s ease;
+}
 
+html:hover {
+    background-image: url("https://baikalnova.ru/wp-content/uploads/2019/12/baikalice2.jpg");
 
 }
+
 
 .navbar {
     background-color: rgba(153, 194, 223, 0.47);
@@ -290,21 +295,27 @@ html {
     color: white;
     font-size: 1.5em;
     grid-area: 4 / 5;
+    cursor: pointer;
 }
 
 .fa-plane {
     color: white;
     font-size: 1.5em;
     grid-area: 4 / 6;
+    cursor: pointer;
 }
 
 .fa-heart {
     color: white;
     font-size: 1.5em;
     grid-area: 4 / 7;
+    cursor: pointer;
+    animation-name: color-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
-@keyframes background-animation {
+@keyframes color-animation {
     from {
         color: white;
     }
@@ -317,34 +328,32 @@ html {
 /*
 @keyframes size-animation {
     0% {
-        width: 100px;
-        height: 100px;
+        width: 30px;
+        height: 30px;
     }
 
     50% {
-        width: 500px;
-        height: 500px;
+        width: 50px;
+        height: 50px;
     }
 
     100% {
-        width: 100px;
-        height: 100px;
+        width: 30px;
+        height: 30px;
     }
 }*/
-
-.background-animation {
+/*
+.background-animation-box {
     color: red;
     animation-name: background-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 
-}
+}*/
 
 /*
-.size-animation-box {
-    width: 100px;
-    height: 100px;
-    background-color: hotpink;
+.size-animation {
+    color: #27c9eac8;
     animation-name: size-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
