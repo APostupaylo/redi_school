@@ -382,7 +382,18 @@ i {
 }
 
 /*style for screen */
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 391px) {
+    .main-pictures {
+        display: none;
+        /*hide it elsewhere */
+    }
+
+    .media-pictures {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 390px) {
     html {
         background-size: 100%;
         background-image: none;
@@ -440,9 +451,9 @@ i {
 
     body .main-content {
         width: 364px;
-        height: 400px;
+        height: 500px;
         margin: 0 0 0 5px;
-        background-color: rgba(153, 194, 223, 0.783);
+        background-color: rgba(153, 194, 223, 0.47);
         box-shadow: 0px 10px 18px 1px rgba(0, 0, 0, 0.227);
         display: flex;
         flex-direction: column;
@@ -495,7 +506,7 @@ i {
     body .offers-grid {
         display: flex;
         flex-direction: column;
-        /*align-content: center;*/
+        background-color: rgba(153, 194, 223, 0.47);
         width: 364px;
         height: 400px;
         border-radius: 0%;
@@ -541,9 +552,92 @@ i {
 
     .social-media {
         width: 364px;
-        margin: 0;
         font-size: 1em;
-        /* grid-area: 1 / 5;
-        grid-template-columns: repeat(7, 40px);*/
+        grid-template-columns: repeat(5, 40px);
+        grid-template-rows: repeat(3, 40px);
+
     }
+
+    .fa-camera-retro {
+        font-size: 1em;
+        grid-area: 3 / 1;
+        justify-items: center;
+        margin-left: 5px;
+    }
+
+    .fa-plane {
+        font-size: 1em;
+        grid-area: 3 / 2;
+        justify-items: center;
+    }
+
+    .fa-heart {
+        font-size: 1em;
+        grid-area: 3 / 3;
+        justify-items: center;
+    }
+
+    .footer-contact {
+        margin: 0 0 0 5px;
+    }
+
+    .main-pictures {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        position: relative
+    }
+
+    .photo_slider_css {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        animation: round 16s infinite;
+        opacity: 0;
+        /*show it on small screens */
+    }
+
+    @keyframes round {
+        25% {
+            opacity: 1
+        }
+
+        40% {
+            opacity: 0
+        }
+    }
+
+    img:nth-child(1) {
+        animation-delay: 20s
+    }
+
+    img:nth-child(2) {
+        animation-delay: 16s
+    }
+
+
+    img:nth-child(3) {
+        animation-delay: 12s
+    }
+
+    img:nth-child(4) {
+        animation-delay: 8s
+    }
+
+    img:nth-child(5) {
+        animation-delay: 4s
+    }
+
+    img:nth-child(6) {
+        animation-delay: 0
+    }
+
+    .media-pictures img {
+        width: 364px;
+        height: 100px;
+        margin-top: 5px;
+
+    }
+
 }
