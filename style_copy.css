@@ -2,12 +2,23 @@ html {
     background-image: url("https://linkisteel.ru/wp-content/uploads/b/3/9/b395af26c5ba0b850beea9fabb9e9825.jpeg");
     background-attachment: fixed;
     background-size: cover;
+    /* transition: background-image 0.20s ease;*/
 }
+
+/*
+html:hover {
+    background-image: url("https://sportishka.com/uploads/posts/2022-03/1646716708_2-sportishka-com-p-priroda-baikala-zimoi-turizm-krasivo-foto-2.jpg");
+
+}*/
+
 
 .navbar {
     background-color: rgba(153, 194, 223, 0.47);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 /*style for logo*/
 .info-container {
@@ -381,17 +392,13 @@ i {
     padding: 5px;
 }
 
+
+
 /*style for screen */
 @media screen and (max-width: 390px) {
-    html {
-        background-size: 100%;
-        background-image: none;
-        background-color: #189AB4;
-        background-attachment: fixed;
-    }
-
     .navbar {
-        height: 150px;
+        width: auto;
+        height: 250px;
         margin: 5px 5px;
     }
 
@@ -402,43 +409,57 @@ i {
     }
 
     .info-container .logo {
-        height: 50px;
-        margin: 0;
+        margin: 0px;
     }
 
-    .info-container .info {
-        margin: 0;
+    .info-container>div>div {
+        margin: 0px 0px 0px 5px;
+    }
+
+    .info {
+        margin: 0px;
+    }
+
+    .list>a {
+        margin: 0px 0px 0px 5px;
     }
 
     .logo .style-lets {
-        font-size: 2em;
-        margin: 0;
+        font-size: 2.5em;
+
     }
 
     .style-travel {
-        font-size: 1.5em;
+        font-size: 2em;
+
+    }
+
+    .drop,
+    .list {
+        font-size: 1em;
     }
 
     .drop .dropdown-content-time {
-        min-width: 80px;
-        margin-top: 30px;
+        min-width: 180px;
+        margin-top: 50px;
         font-size: 0.8em;
     }
 
     .drop .dropdown-content-history {
-        min-width: 110px;
-        margin-top: 30px;
+        min-width: 250px;
+        margin-top: 50px;
         font-size: 0.8em;
+
     }
 
-    .drop-menu {
+    .dropdown li {
         list-style-type: none;
-        padding-left: 10px;
     }
 
     /*style for screen body*/
 
     body .main-content {
+        width: 390px;
         height: 700px;
         margin: 10px 0 0 10px;
         background-color: rgba(153, 194, 223, 0.783);
@@ -489,4 +510,104 @@ i {
         align-items: center;
         margin-left: 100px;
 
+
+
     }
+
+    /*
+    body .offers-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1000px;
+        height: 400px;
+        margin-top: 50px;
+        border-radius: 0%;
+    }*/
+
+    /*
+    .off-summ-grid {
+        display: grid;
+        grid-template-areas:
+            "N N  H H H H"
+            "N N  T T T T"
+            "N N  T T T T"
+            "N N  T T T T";
+        width: 400px;
+        height: 200px;
+        margin-left: 30px;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+
+    }
+
+    .off-summ-grid h1 {
+        grid-area: N;
+        color: #157e93;
+    }
+
+    .off-summ-grid h3 {
+        grid-area: H;
+        padding-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .off-summ-grid p {
+        grid-area: T;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    .off-wint-grid {
+        display: grid;
+        grid-template-areas:
+            "A A  B B B B"
+            "A A  C C C C"
+            "A A  C C C C"
+            "A A  C C C C"
+            "A A  C C C C"
+            "A A  C C C C";
+        width: 400px;
+        height: 200px;
+        margin-left: 20px;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+    }
+
+
+    .off-wint-grid h1 {
+        grid-area: A;
+        color: #157e93;
+    }
+
+    .off-wint-grid h3 {
+        grid-area: B;
+        padding-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .off-wint-grid p {
+        grid-area: C;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    .next {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+
+    .fa-share {
+        grid-area: 2 / 2;
+        color: white;
+        font-size: 2em;
+        transition: color 0.5s;
+    }
+
+    .fa-share:hover {
+        cursor: pointer;
+        color: #27c9eac8;
+    }*/
+}
