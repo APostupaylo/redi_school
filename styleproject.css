@@ -278,17 +278,17 @@ html {
     grid-template-rows: repeat(5, 40px);
 }
 
-/*
-.social-media i {
-    color: white;
-    font-size: 1.5em;
-}*/
-
 .fa-camera-retro {
     color: white;
     font-size: 1.5em;
     grid-area: 4 / 5;
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.fa-camera-retro:hover {
+    cursor: pointer;
+    color: black;
 }
 
 .fa-plane {
@@ -296,6 +296,12 @@ html {
     font-size: 1.5em;
     grid-area: 4 / 6;
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.fa-plane:hover {
+    cursor: pointer;
+    color: black;
 }
 
 .fa-heart {
@@ -317,40 +323,6 @@ html {
         color: red;
     }
 }
-
-/*
-@keyframes size-animation {
-    0% {
-        width: 30px;
-        height: 30px;
-    }
-
-    50% {
-        width: 50px;
-        height: 50px;
-    }
-
-    100% {
-        width: 30px;
-        height: 30px;
-    }
-}*/
-/*
-.background-animation-box {
-    color: red;
-    animation-name: background-animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
-}*/
-
-/*
-.size-animation {
-    color: #27c9eac8;
-    animation-name: size-animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}*/
 
 /*style for footer*/
 .footer-contact {
@@ -434,12 +406,14 @@ i {
         min-width: 80px;
         margin-top: 30px;
         font-size: 0.8em;
+        background-color: rgba(153, 194, 223, 0.897);
     }
 
     .drop .dropdown-content-history {
         min-width: 110px;
         margin-top: 30px;
         font-size: 0.8em;
+        background-color: rgba(153, 194, 223, 0.897);
     }
 
     .drop-menu {
